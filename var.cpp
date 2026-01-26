@@ -12,6 +12,10 @@ int main(){
     bool isAdult=true;
     double largeDecimal=3.141592653589793;
     age=grade; // implicit typecasting
+    	int age;
+	cout<<"Enter your age buddy"<<endl;
+	cin>>age;
+	cout<<" MY AGE IS :"<<age<<endl;
         
     return 0;
 }
