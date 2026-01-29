@@ -89,16 +89,16 @@ int main(){
 // }
 // cout<<"Sum of the numbers which are divisible by n is "<<divSum<<endl;
 // Program to calculate the factorial of the numbers
-int fact=1;
-int n;
-cout<<"Enter the digit which you want to see the sum of"<<endl;
-cin>>n;
-for(int i=1;i<=n;i++){
-    fact*=i;
-}
-cout<<"Factorial of the given number is "<<fact<<endl;
-int sumDigit=sumNum(n);
-cout<<"The sum of the digits is "<<sumDigit<<endl;
-    return 0;
+// int fact=1;
+// int n;
+// cout<<"Enter the digit which you want to see the sum of"<<endl;
+// cin>>n;
+// for(int i=1;i<=n;i++){
+//     fact*=i;
+// }
+// cout<<"Factorial of the given number is "<<fact<<endl;
+// int sumDigit=sumNum(n);
+// cout<<"The sum of the digits is "<<sumDigit<<endl;
+//     return 0;
     
 }
