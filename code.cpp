@@ -1,6 +1,8 @@
 #include<iostream>
 #include<conio.h>
 #include<vector>
+#include<list>;
+#include<deque>;
 using namespace std;
 int sumNum(int n){
     int sum=0;
@@ -116,5 +118,33 @@ cout<<"capacity"<<vec.capacity()<<endl;
 for (int var:vec){
     cout<<var<<endl;
 }    
+	// your code goes 
+// Here I am going to use the iterators specially the vector iterators to iterate through the vector container
+
+// vector <int> vec={1,2,3,4,5};
+// vector <int>::iterator it;
+// for (it=vec.begin();it!=vec.end();it++){
+//     cout<<(*it)<<" ";
+// }
+// // If we want to do it for the reverse order we just define it as a reverse operator or we just use the keyword auto 
+// for(auto it=vec.rbegin();it!=vec.rend();it++){
+//     cout<<(*it)<<" ";
+// }
+// Internally the lists are operated as doubly linked lists and deque as dynamic arrays so we can access the deques as d[i]
+// list <int> l;
+// l.push_back(1);
+// l.push_back(2);
+// l.push_front(4);
+// l.push_front(5);
+// for(int i:l){
+//     cout<<i<<" ";
+// }
+deque <int> d={1,2,3,4,5};
+ for(int i:d){
+    cout<<d[i]<<" ";
+}
+
+
+
 return 0;
 }
