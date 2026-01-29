@@ -1,13 +1,21 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-int main(){
-    int n;
-    cout<<"Enter a number "<<endl;
-    cin>>n;
-    if(n>=0){
-        cout<<"The number is positive"<<endl;
+int sumNum(int n){
+    int sum=0;
+    while(n>0){
+        sum+=n%10;
+        n/=10;
     }
+    return sum;
+}
+int main(){
+    // int n;
+    // cout<<"Enter a number "<<endl;
+    // cin>>n;
+    // if(n>=0){
+    //     cout<<"The number is positive"<<endl;
+    // }
     
     // 	int age;
 // 	cout<<"Enter your age"<<endl;
@@ -28,9 +36,9 @@ int main(){
 // 	    cout<<"Odd number"<<endl;
 // 	}\
 // Prgram to calculate sum of numbers from 1 to n 
-int n,sum=0;
-cout<<"Enter the number "<<endl;
-cin>>n;
+// int n,sum=0;
+// cout<<"Enter the number "<<endl;
+// cin>>n;
 // // for(int i=1;i<=n;i++){
 // //     sum=sum+i;
 // // }
@@ -82,10 +90,15 @@ cin>>n;
 // cout<<"Sum of the numbers which are divisible by n is "<<divSum<<endl;
 // Program to calculate the factorial of the numbers
 int fact=1;
+int n;
+cout<<"Enter the digit which you want to see the sum of"<<endl;
+cin>>n;
 for(int i=1;i<=n;i++){
     fact*=i;
 }
 cout<<"Factorial of the given number is "<<fact<<endl;
+int sumDigit=sumNum(n);
+cout<<"The sum of the digits is "<<sumDigit<<endl;
     return 0;
     
 }
