@@ -1,5 +1,6 @@
 #include<iostream>
 #include<conio.h>
+#include<vector>
 using namespace std;
 int sumNum(int n){
     int sum=0;
@@ -100,5 +101,20 @@ int main(){
 // int sumDigit=sumNum(n);
 // cout<<"The sum of the digits is "<<sumDigit<<endl;
 //     return 0;
-    
+// Vectors and its operations 
+// 	vector <int> vec;Another way to represent the vectors 
+// 	vector <int> vec={1,2,3};
+// 	cout<<vec[0]<<endl;
+vector <int> vec;
+vec.push_back(20);
+vec.push_back(30);
+vec.push_back(40);
+vec.push_back(50);
+vec.push_back(60);
+cout<<"size"<<vec.size()<<endl;
+cout<<"capacity"<<vec.capacity()<<endl;
+for (int var:vec){
+    cout<<var<<endl;
+}    
+return 0;
 }
